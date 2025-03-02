@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles/important.css" />
+    <link rel="stylesheet" href="styles/textSheet.css" />
+    <style>
+      /* Allgemeine Stile */
+
+      /* About Section */
+
+      /* Skills */
+      .skills {
+        padding: 40px 10px;
+      }
+
+      .skills-container {
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      
+      }
+
+      .skill {
+        background: gray;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 20px;
+        border-radius: 10px;
+       
+        font-size: 1.2em;
+        transition: transform 0.3s;
+      }
+
+      .skill:hover {
+        transform: scale(1.1);
+      }
+
+      /* Projects */
+      .projects {
+        padding: 40px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .project {
+        background: gray;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 600px;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <p class="aviaGuide">AviaGuide.</p>
+      <a class="navSchrift" href="index.html">Home</a>
+      <a class="navSchrift" href="explore.html">Explore</a>
+      <a class="navSchrift" href="download.html">Download</a>
+      <a class="navSchrift" href="about.html">About</a>
+    </div>
+
+    <!-- Section 1 - Bild hinter Text-->
+    <div class="hero">
+      <img src="images/Boeing 747.jpg" alt="Flugzeug" />
+      <div class="hero-text" style=" color: white">
+        Hi, I'm  Dr. Christian Fuchs
+      </div>
+    </div>
+    <!-- Section 2 - About-->
+    <section class="hero-text-Klein" style="margin: 40px 300px">
+      <p style="text-align: center;">
+        I'm a software developer with a strong focus on building intuitive and
+        high-performance applications. My passion for aviation and technology
+        drives me to create digital experiences that inform and inspire.
+      </p>
+    </section>
+
+    <!-- Section 3 - Skills -->
+    <section style="padding: 40px 10px; margin: 0px 300px">
+      <h2
+        class="hero-text2"
+        style="margin-top: 50px; font-size: 30px"
+      >
+        💡 Skills & Technologies
+      </h2>
+      <div class="skills-container">
+        <div class="skill">🚀 Swift</div>
+        <div class="skill">🎨 UI/UX Design</div>
+        <div  class="skill">⚙️ API Development</div>
+        <div class="skill">📡 Real-time Data</div>
+        <div class="skill">🌍 Web & Mobile Apps</div>
+        <div class="skill">🔧 DevOps & Cloud</div>
+      </div>
+    </section>
+
+    <!-- Section 4 - Projects -->
+    <section class="projects" >
+      <h2 class="hero-text2" style="margin-top: 50px; font-size: 30px">
+        🔨 Projects
+      </h2>
+      <div class="project">
+        <h3 class="aviaGuide">AviaGuide - Aviation Info App</h3>
+        <p class="hero-text-Klein" style="text-align: left">
+          A real-time flight tracking and aviation database application.
+          <br />
+          <a class="navSchrift" href=""
+            >Download AviaGuide</a
+          >
+        </p>
+      </div>
+      <div class="project">
+        <h3 class="aviaGuide">Superghost</h3>
+        <p class="hero-text-Klein" style="text-align: left">
+          A Game which a friend of mine coded with me
+          <br />
+          <a class="navSchrift" href="https://hannesnagel.com/ghost"
+            >Download Superghost</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 - Footer -->
+    <footer>
+      <p>© 2025 AviaGuide | <a href="#">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>

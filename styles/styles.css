@@ -1,0 +1,97 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Download Section */
+.download {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.app-logo {
+    width: 120px;
+    margin: 20px 0;
+}
+
+/* Download Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.download-button {
+    display: block;
+    padding: 15px 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ios {
+    background: #007aff;
+    color: white;
+}
+
+.android {
+    background: #34a853;
+    color: white;
+}
+
+.download-button:hover {
+    opacity: 0.8;
+}
+
+/* Features Section */
+.features {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

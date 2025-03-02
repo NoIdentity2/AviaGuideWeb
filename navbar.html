@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation mit Bild</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0
+        ); /* Dunkler, halbtransparenter Hintergrund */
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      .aviaGuide {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        display: inline-block;
+        margin-right: 200px;
+      }
+
+      .navSchrift {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        display: inline-block;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+
+      .navSchrift:hover {
+        color: #ffcc00; /* Goldene Farbe beim Hover */
+      }
+
+      /* Bild unter Text */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-image: url(images/FlugzeugOben.jpg); /* Ersetze durch dein Bild */
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px; /* Platz für fixe Navigation */
+      }
+
+      /* Text über Bild */
+      .hero-text {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Leichter Hintergrund für bessere Lesbarkeit */
+        padding: 10px;
+      }
+
+      /* Inhalt darunter */
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <p class="aviaGuide">AviaGuide.</p>
+      <a class="navSchrift" href="index.html">Home</a>
+      <a class="navSchrift" href="seite2.html">Explore</a>
+      <a class="navSchrift" href="seite2.html">Contact</a>
+      <a class="navSchrift" href="seite2.html">About</a>
+    </div>
+
+    <!-- Bild mit Text -->
+    <div class="hero">
+      <div class="hero-text">Willkommen auf meiner Website!</div>
+    </div>
+
+    <!-- Inhalt -->
+    <div class="content">
+      <h1>Weitere Inhalte</h1>
+      <p>
+        Hier ist ein Beispieltext, um zu zeigen, dass die Navigation fixiert
+        bleibt.
+      </p>
+    </div>
+  </body>
+</html>

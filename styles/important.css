@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/*---Allgemeine Anpassungen---*/
+body {
+  background-color: black;
+}
+/* Footer */
+footer {
+  background: #081025;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffcc00;
+}
+/*--- Home Page---*/
+
+/* Bild */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0px; /* Platz für die Navbar */
+}
+
+/* Container für das Bild mit Text */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+/* Container für die quadratischen Bilder auf index.html */
+.image-container {
+  filter: none;
+  display: flex; /* Flexbox für horizontale Ausrichtung */
+  width: 100%; /* Nimmt die gesamte Breite ein */
+  justify-content: space-between; /* Gleichmäßiger Abstand zwischen den Bildern */
+}
+/* Jedes Bild ist quadratisch, mit gleicher Breite und Höhe */
+.image-container img {
+  width: 33.33%; /* Jedes Bild bekommt 1/3 der Gesamtbreite */
+  height: auto; /* Die Höhe bleibt proportional zur Breite */
+  object-fit: cover; /* Das Bild wird skaliert, ohne es zu verzerren */
+  aspect-ratio: 1; /* Erzeugt ein Quadrat */
+}
+
+/*--- Explore Page ---*/
+
+/*--- Section 2 - Features ---*/
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 10px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+/*--- Section 3 - Screenshots---*/
+.screenshots {
+  margin: 50px 0;
+}
+
+.screenshot-container img {
+  width: 200px;
+  margin: 10px;
+  border-style: solid;
+  border-color: #ffcc00;
+
+  border-radius: 22px;
+}
+/*--- Section 4 - ExploreText ---*/
+.image-containerExploreSection4 {
+  display: flex; /* Stellt Text und Bild nebeneinander */
+  width: 100%; /* Volle Breite */
+  justify-content: space-between; /* Abstand zwischen Text und Bild */
+  align-items: center; /* Mittige Ausrichtung */
+  background-color: rgb(47, 47, 47);
+}
+
+.image-containerExploreSection4 img {
+  width: 50%; /* Das Bild nimmt 50% der Gesamtbreite ein */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
+  object-fit: cover; /* Verhindert Verzerrung */
+  aspect-ratio: 1; /* Hält das Bild quadratisch */
+}

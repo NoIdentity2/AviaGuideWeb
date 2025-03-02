@@ -1,0 +1,100 @@
+/* Navbar-Stil */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0); /* Dunkler, halbtransparenter Hintergrund */
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.aviaGuide {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.navSchrift {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navSchrift:hover {
+  color: #ffcc00; /* Goldene Farbe beim Hover */
+}
+
+/* Text über dem Bild */
+.hero-text {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+
+  padding: 10px;
+}
+
+.hero-text-Klein {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+.heroLinkAufSeite {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+.heroLinkAufSeite:hover {
+  color: #ffcc00;
+}
+
+.hero-text2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+/* Explore Page*/
+
+.textExploreSection4 {
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.text-wrapper {
+  margin-right: 20px;
+  margin-left: 20px; /* Abstand zum linken Rand */
+}
+
+.section4Groß {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+
+  margin-bottom: 20px;
+}

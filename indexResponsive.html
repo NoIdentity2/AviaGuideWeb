@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AviaGuide - Home</title>
+    <link rel="stylesheet" href="styles/textSheet.css" />
+    <link rel="stylesheet" href="styles/important.css" />
+    <link rel="stylesheet" href="styles/topNav.css" />
+
+    <style>
+      @media (min-width: 670px) {
+        body {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 0, 2fr, repeat(4, 1fr);
+          grid-template-areas:
+            "navigation navigation navigation"
+            "section1 section1 section1"
+            "section2 section2 section2"
+            "section3 section3 section3"
+            "section4 section4 section4";
+        }
+      }
+      @media (max-width: 670px) {
+        body {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas: "navigationSmall";
+        }
+      }
+      #navigation {
+        grid-area: navigation;
+      }
+
+      #navigationSmall {
+        grid-area: navigationSmall;
+      }
+
+      #section1 {
+        grid-area: section1;
+      }
+
+      #section2 {
+        grid-area: section2;
+      }
+
+      #section3 {
+        grid-area: section3;
+      }
+
+      #section4 {
+        grid-area: section4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navigation">
+      <div class="navbar">
+        <p class="aviaGuide">AviaGuide.</p>
+        <a class="navSchrift" href="index.html">Home</a>
+        <a class="navSchrift" href="explore.html">Explore</a>
+        <a class="navSchrift" href="download.html">Download</a>
+        <a class="navSchrift" href="about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- Small Navigation-->
+    <nav id="navigationSmall">
+      <div>
+        <p class="aviaGuide">AviaGuide.</p>
+      </div>
+    </nav>
+
+    <!-- Section 1 - Bild -->
+    <section id="section1">
+      <div class="hero">
+        <img src="images/FlugzeugOben.jpg" alt="Flugzeug" />
+        <div class="hero-text">
+          Life is too short <br />to don&#8216;t know about planes
+          <a class="heroLinkAufSeite" href="explore.html">
+            <p style="text-align: center; margin-top: 20px">
+              Explore AviaGuide
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 - Beschreibung kurz -->
+    <div id="section2">
+      <p class="hero-text2">Explore AviaGuide</p>
+      <p class="hero-text-Klein">
+        Dive into the fascinating world of airplanes, explore impressive
+        models,<br />
+        and experience aviation from a whole new perspective!
+      </p>
+      <br />
+      <a class="heroLinkAufSeite" href="explore.html"
+        ><p style="text-align: center; margin-bottom: 200px">
+          &#43; Read more
+        </p></a
+      >
+    </div>
+    <!-- Section 3 - 3-Bilder-Anordnung -->
+
+    <section id="section3">
+      <div class="image-container">
+        <img src="images/AH-64D Apache Longbow.jpg" alt="Flugzeug" />
+        <img src="images/Boeing 737.jpg" alt="Luftfahrt" />
+        <img src="images/Lockheed SR-71 Blackbird.jpg" alt="Flughafen" />
+      </div>
+    </section>
+
+    <!-- Section 4 - Footer -->
+    <footer id="section4">
+      <p>
+        © 2025 AeroGuide | <a href="#">Datenschutz</a> |
+        <a href="#">Impressum</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -34,6 +34,11 @@ a:-webkit-any-link {
 a:hover {
   color: #ffcc00;
 }
+
+.navIcon {
+  width: 22.5px;
+  right: 1;
+}
 /*--- Home Page---*/
 
 /* Bild */

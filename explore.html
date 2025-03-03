@@ -17,6 +17,16 @@
         text-align: center;
       }
     </style>
+    <script>
+      function checkScreenSize() {
+        if (window.innerWidth < 670) {
+          window.location.href = "exploreSmartphone.html";
+        }
+      }
+
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+    </script>
   </head>
   <body>
     <!--NavigationBar-->
@@ -33,7 +43,7 @@
       <img src="images/Planes/F35 Thema Bild.jpg" alt="Flugzeug" />
       <div class="hero-text" style="margin-top: 60px; color: white">
         Your personal aircraft <br />search engine
-        <a href="#" class="heroLinkAufSeite"
+        <a href="download.html" class="heroLinkAufSeite"
           ><p style="text-align: center; margin-top: 20px">Download now</p></a
         >
       </div>
@@ -43,8 +53,8 @@
     <p class="hero-text2">Features</p>
     <section class="features">
       <div class="feature">
-        <h2>Real-time data</h2>
-        <p>See real-time aircraft data from airlines worldwide.</p>
+        <h2>Real-world data</h2>
+        <p>See real-world aircraft data from aircrafts worldwide.</p>
       </div>
       <div class="feature">
         <h2>Aircraft database</h2>
@@ -81,19 +91,8 @@
           on most of the world's aircraft. Use it to discover the most popular,
           best-known and most interesting aircraft.
           <br /><br />
-          Melde dich zudem noch in der App an und merke dir deine
-          Lieblingsmodelle. Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Beatae illum sed labore hic magnam? Officia recusandae sit, amet
-          deleniti accusantium laudantium hic pariatur consequuntur, error
-          fugiat delectus nostrum exercitationem incidunt porro a qui ex sed
-          voluptates obcaecati illo modi est. Unde sapiente omnis officia sed?
-          Officia ullam praesentium suscipit tenetur libero! <br /><br />
-          Quae, autem. Exercitationem ducimus culpa accusamus at sit corporis a!
-          Voluptatum, delectus totam saepe beatae eos accusantium officia
-          recusandae eligendi dignissimos officiis corrupti nesciunt
-          consequuntur autem facilis aliquid doloribus nisi hic aliquam quos
-          quaerat! Nobis, reprehenderit? Fugiat, sapiente magni veniam veritatis
-          facere corrupti molestias omnis accusantium architecto iste? Magnam?
+          Sign in today and save your very favorite or interesting aircraft
+          models.
         </p>
       </div>
       <img
@@ -111,4 +110,3 @@
     </footer>
   </body>
 </html>
-

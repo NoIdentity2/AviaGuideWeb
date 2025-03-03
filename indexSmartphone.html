@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AviaGuide - Home</title>
+    <link rel="stylesheet" href="styles/textSheet.css" />
+    <link rel="stylesheet" href="styles/important.css" />
+    <link rel="stylesheet" href="styles/topNav.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="javaScript" href="javaScript/slider.js" />
+
+    <script>
+      function checkScreenSize() {
+        if (window.innerWidth > 670) {
+          window.location.href = "index.html";
+        }
+      }
+
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <p class="aviaGuide" style="float: left; margin-left: 20px">AviaGuide.</p>
+      <a href="navMenu.html" style="float: right; margin-right: 20px"
+        ><img src="images/Icons/menuNavigation.jpg" class="navIcon" alt=""
+      /></a>
+    </div>
+
+    <!-- Section 1 - Bild -->
+    <div class="hero">
+      <img src="images/Planes/FlugzeugOben.jpg" alt="Flugzeug" />
+    </div>
+
+    <!-- Section 2 - Beschreibung kurz -->
+    <div>
+      <p class="hero-text2" style="margin-top: 100px">Explore AviaGuide</p>
+      <p class="hero-text-Klein">
+        Dive into the fascinating world of airplanes,<br />
+        explore impressive models, and experience <br />aviation from a whole
+        new perspective!
+      </p>
+      <br />
+      <a class="heroLinkAufSeite" href="explore.html"
+        ><p style="text-align: center; margin-bottom: 100px">
+          &#43; Read more
+        </p></a
+      >
+    </div>
+
+    <!-- Section 3 - Slider -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          class="sliderImage"
+          src="images/Planes/AH-64D Apache Longbow.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="sliderImage"
+          src="images/Planes/Boeing 737.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="sliderImage"
+          src="images/Planes/Lockheed SR-71 Blackbird.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!-- Section 4 - Footer -->
+    <footer>
+      <p>
+        © 2025 AeroGuide | <a href="#">Datenschutz</a> |
+        <a href="#">Impressum</a>
+      </p>
+    </footer>
+  </body>
+</html>

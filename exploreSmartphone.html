@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avia Guide - Explore</title>
+    <link rel="stylesheet" href="styles/textSheet.css" />
+    <link rel="stylesheet" href="styles/important.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="javaScript" href="javaScript/slider.js" />
+
+    <script>
+      function checkScreenSize() {
+        if (window.innerWidth > 670) {
+          window.location.href = "explore.html";
+        }
+      }
+
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <p class="aviaGuide" style="float: left; margin-left: 20px">AviaGuide.</p>
+      <a href="navMenu.html" style="float: right; margin-right: 20px"
+        ><img src="images/Icons/menuNavigation.jpg" class="navIcon" alt=""
+      /></a>
+    </div>
+    <!--Section 1 - Bild-->
+
+    <!-- Section 1 - Bild -->
+    <div class="hero">
+      <img src="images/Planes/F35 Thema Bild.jpg" alt="Flugzeug" />
+    </div>
+
+    <div class="hero-text2" style="margin-top: 20px; color: white">
+      Your personal aircraft <br />search engine
+      <a href="download.html" class="heroLinkAufSeite"
+        ><p style="text-align: center; margin-top: 10px">Download now</p></a
+      >
+    </div>
+
+    <!-- Section 3 - Screenshots-->
+    <!-- Section 3 - Slider -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          class="sliderImageScreenshots"
+          src="images/Screenshots/Screenshot 1.png"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="sliderImageScreenshots"
+          src="images/Screenshots/Screenshot 2.png"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="sliderImageScreenshots"
+          src="images/Screenshots/Screenshot 3.png"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!-- Section 4 - Text + Bild -->
+
+    <div
+      class="image-containerExploreSection4"
+      style="background-color: rgb(27, 27, 27); color: white"
+    >
+      <div class="text-wrapper">
+        <h2>AviaGuide</h2>
+
+        <p class="textExploreSection4" style="font-size: 11px">
+          Avia Guide is an aviation guide that explains and describes the
+          various areas of aviation and aerospace technology. Whether passenger
+          aircraft, helicopters, fighter planes or UFOs. This app contains data
+          on most of the world's aircraft. Use it to discover the most popular,
+          best-known and most interesting aircraft.
+        </p>
+      </div>
+      <img
+        src="images/Planes/Eurofighter Typhoon.png"
+        alt="Eurofighter Typhoon"
+      />
+    </div>
+
+    <!-- Section 5 - Footer-->
+    <footer>
+      <p>
+        © 2025 AeroGuide | <a href="#">Datenschutz</a> |
+        <a href="#">Impressum</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="styles/topNav.css" />
 
     <style></style>
+    <script>
+      function checkScreenSize() {
+        if (window.innerWidth < 670) {
+          window.location.href = "indexSmartphone.html";
+        }
+      }
+
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+    </script>
   </head>
   <body>
     <!-- Navigation -->

@@ -1,0 +1,15 @@
+AviaGuide Merkzettel
+
+Noch zu machen:
+
+- Datenschutz und Impressunm auf allen Seiten
+- DownloadPage machen
+- AboutPage machen
+- Responsive machen (mit JS) -> aktuell bei AboutPage (Smartphone)
+Merken:
+
+Gemacht:
+
+- Überall Bilder kontrollieren
+
+Grad dabei:

@@ -93,19 +93,7 @@ a:hover {
 .feature:hover {
   transform: translateY(-5px);
 }
-/*--- Section 3 - Screenshots---*/
-.screenshots {
-  margin: 50px 0;
-}
 
-.screenshot-container img {
-  width: 200px;
-  margin: 10px;
-  border-style: solid;
-  border-color: #ffcc00;
-
-  border-radius: 22px;
-}
 /*--- Section 4 - ExploreText ---*/
 .image-containerExploreSection4 {
   display: flex; /* Stellt Text und Bild nebeneinander */

@@ -34,18 +34,22 @@
   </head>
   <body style="background-color: black">
     <section>
+      <script>
+        function goBack() {
+          window.history.back(); // Geht zur vorherigen Seite zurück
+        }
+      </script>
+
       <h1 style="display: inline">AviaGuide.</h1>
-      <a href="indexResponsive.html"
-        ><img src="images/Icons/closeNavigation.png"
-      /></a>
+      <a onclick="goBack()"><img src="images/Icons/closeNavigation.png" /></a>
       <div class="vertical-menu">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
 
-        <a href="#">Explore</a>
+        <a href="explore.html">Explore</a>
 
-        <a href="#">Download</a>
+        <a href="download.html">Download</a>
 
-        <a href="#">About</a>
+        <a href="about.html">About</a>
       </div>
     </section>
   </body>
